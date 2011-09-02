@@ -190,7 +190,7 @@ class Xero {
 	public function __call($name, $arguments) {
 		$name = strtolower($name);
 		$valid_methods = array('accounts', 'contacts', 'creditnotes', 'currencies', 'invoices', 'organisation', 'payments', 'taxrates', 'trackingcategories', 'items', 'journals', 'manualjournals');
-        $valid_post_methods = array('contacts', 'creditnotes', 'invoices', 'items' . 'manualjournals');
+        $valid_post_methods = array('contacts', 'creditnotes', 'invoices', 'items' , 'manualjournals');
         $valid_put_methods = array('payments', 'items', 'manualjournals');
         $valid_get_methods = array('contacts', 'creditnotes', 'invoices', 'accounts', 'currencies', 'organisation', 'taxrates', 'trackingcategories', 'items', 'journals', 'manualjournals');
         $methods_map = array(
